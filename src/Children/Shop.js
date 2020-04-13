@@ -1,5 +1,4 @@
 import React from  'react';
-
 const shop = (props)=>{
     console.log(props);
     return(

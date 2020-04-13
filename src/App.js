@@ -6,6 +6,7 @@ import Bird from './Class-component/State/Bird';
 import Employee1 from './Class-component/Event-handling/Employee1';
 import Car from "./Class-component/setState/Car";
 import Shop from "./Children/Shop";
+import Fruit from './Table/Fruit'
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Employee1/>
       <Car/>
       <Shop name="Villege HyperMarket" location="HSR">Please Visit our HyperMarket</Shop>
+      <Fruit/>
       </div>
   );
 }
