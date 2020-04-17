@@ -6,7 +6,9 @@ import Bird from './Class-component/State/Bird';
 import Employee1 from './Class-component/Event-handling/Employee1';
 import Car from "./Class-component/setState/Car";
 import Shop from "./Children/Shop";
-import Fruit from './Table/Fruit'
+import Fruit from './Table/Fruit';
+import Error from './Error-Boundries/Error';
+import FoodItem from './Error-Boundries/FoodItem';
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,18 @@ function App() {
       <Car/>
       <Shop name="Villege HyperMarket" location="HSR">Please Visit our HyperMarket</Shop>
       <Fruit/>
+        <Error>
+          <FoodItem item ='Rice'/>
+        </Error>
+        <Error>
+          <FoodItem item ='Pulses'/>
+        </Error>
+        <Error>
+          <FoodItem item ='Other'/>
+        </Error>
+        <Error>
+          <FoodItem item ='Jowar'/>
+        </Error>
       </div>
   );
 }
