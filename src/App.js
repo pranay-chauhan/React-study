@@ -11,7 +11,7 @@ import './App.css';
 // import FoodItem from './Error-Boundries/FoodItem';
 // import Bird from './Class-component/Bird';
 // import Car from './Functional-component/Car';
-import Employee from './Table/Employee'
+import Employee from './Table/Employee-image'
 function App() {
   return (
     <div className="App">
