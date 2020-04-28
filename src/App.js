@@ -1,19 +1,22 @@
 import React from 'react';
 import './App.css';
 //import Person from './Class-component/Person';
-import Employee from './Functional-component/Employee';
-import Bird from './Class-component/State/Bird';
-import Employee1 from './Class-component/Event-handling/Employee1';
-import Car from "./Class-component/setState/Car";
-import Shop from "./Children/Shop";
-import Fruit from './Table/Fruit';
-import Error from './Error-Boundries/Error';
-import FoodItem from './Error-Boundries/FoodItem';
+//import Employee from './Functional-component/Employee';
+//import Bird from './Class-component/State/Bird';
+//import Employee1 from './Class-component/Event-handling/Employee1';
+//import Car from "./Class-component/setState/Car";
+// import Shop from "./Children/Shop";
+// import Fruit from './Table/Fruit';
+// import Error from './Error-Boundries/Error';
+// import FoodItem from './Error-Boundries/FoodItem';
+// import Bird from './Class-component/Bird';
+// import Car from './Functional-component/Car';
+import Employee from './Table/Employee'
 function App() {
   return (
     <div className="App">
       {/* <Person/> */}
-      <Employee/>
+      {/* <Employee/>
       <Bird/>
       <Employee1/>
       <Car/>
@@ -30,7 +33,12 @@ function App() {
         </Error>
         <Error>
           <FoodItem item ='Jowar'/>
-        </Error>
+        </Error> */}
+        {/* <Bird name="Sparrow" color="white"/>
+        <Bird/>
+        <Bird/>
+        <Car/> */}
+        <Employee/>
       </div>
   );
 }
