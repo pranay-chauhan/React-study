@@ -14,6 +14,7 @@ import './App.css';
 //import Employee from './Table/Employee-image';
 import Fruit from './Class-component/State/Fruit';
 import Student from './Table/Student';
+import Flower from './Functional-component/Flower'
 function App() {
   return (
     <div className="App">
@@ -41,8 +42,10 @@ function App() {
         <Bird/>
         <Car/> */}
         {/* <Employee/> */}
-        <Fruit/>
-        <Student/>
+        {/* <Fruit/>
+        <Student/> */}
+        <Flower name="Rose" color='Pink'/>
+        <Flower name='Lotus' color='Blue'>I live in Water</Flower>
       </div>
   );
 }
