@@ -11,7 +11,9 @@ import './App.css';
 // import FoodItem from './Error-Boundries/FoodItem';
 // import Bird from './Class-component/Bird';
 // import Car from './Functional-component/Car';
-import Employee from './Table/Employee-image'
+//import Employee from './Table/Employee-image';
+import Fruit from './Class-component/State/Fruit';
+import Student from './Table/Student';
 function App() {
   return (
     <div className="App">
@@ -38,7 +40,9 @@ function App() {
         <Bird/>
         <Bird/>
         <Car/> */}
-        <Employee/>
+        {/* <Employee/> */}
+        <Fruit/>
+        <Student/>
       </div>
   );
 }

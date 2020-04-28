@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 class Bird extends React.Component{
     render(props){
         return(
