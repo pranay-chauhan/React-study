@@ -5,7 +5,7 @@ const flower =(props)=>{
     return(
         <div>
             {props.name}
-            {props.children}
+            {props.children} 
         </div>
     )
 }

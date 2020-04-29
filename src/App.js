@@ -1,5 +1,11 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import About from './Routing/About';
+import Menu from './Routing/Menu';
+import Contact from './Routing/Contact';
+import Home from './Routing/Home'; 
+import PageNotFound from './Routing/PageNotFound'
 //import Person from './Class-component/Person';
 //import Employee from './Functional-component/Employee';
 //import Bird from './Class-component/State/Bird';
@@ -13,11 +19,11 @@ import './App.css';
 // import Car from './Functional-component/Car';
 //import Employee from './Table/Employee-image';
 import Fruit from './Class-component/State/Fruit';
-import Student from './Table/Student';
-import Flower from './Functional-component/Flower'
+// import Student from './Table/Student';
+// import Flower from './Functional-component/Flower'
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* <Person/> */}
       {/* <Employee/>
       <Bird/>
@@ -44,8 +50,17 @@ function App() {
         {/* <Employee/> */}
         {/* <Fruit/>
         <Student/> */}
-        <Flower name="Rose" color='Pink'/>
-        <Flower name='Lotus' color='Blue'>I live in Water</Flower>
+        {/* <Flower name="Rose" color='Pink'/>
+        <Flower name='Lotus' color='Blue'>I live in Water</Flower> */}
+         <BrowserRouter>
+        <Menu/>
+        <Switch>
+        <Route path = "/" exact component={Home}/>
+        <Route path = "/about" component={About}/>
+        <Route path = "/contact"component={Contact}/>
+        <Route component={PageNotFound}/>
+        </Switch>
+      </BrowserRouter>
       </div>
   );
 }
