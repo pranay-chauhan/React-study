@@ -18,9 +18,10 @@ import PageNotFound from './Routing/PageNotFound'
 // import Bird from './Class-component/Bird';
 // import Car from './Functional-component/Car';
 //import Employee from './Table/Employee-image';
-import Fruit from './Class-component/State/Fruit';
+//import Fruit from './Class-component/State/Fruit';
 // import Student from './Table/Student';
-// import Flower from './Functional-component/Flower'
+// import Flower from './Functional-component/Flower';
+import Registration from './Form-Validation/Registration'
 function App() {
   return (
     <div>
@@ -61,6 +62,7 @@ function App() {
         <Route component={PageNotFound}/>
         </Switch>
       </BrowserRouter>
+      <Registration/>
       </div>
   );
 }
