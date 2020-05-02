@@ -21,7 +21,10 @@ import PageNotFound from './Routing/PageNotFound'
 //import Fruit from './Class-component/State/Fruit';
 // import Student from './Table/Student';
 // import Flower from './Functional-component/Flower';
-import Registration from './Form-Validation/Registration'
+import Registration from './Form-Validation/Registration';
+import HookCounterUseState from './Hooks/HookCouterUseState';
+import HookCounterPreviousState from './Hooks/HookCounterPreviousState';
+import UseStatewithArray from './Hooks/UseStatewithArray';
 function App() {
   return (
     <div>
@@ -63,6 +66,9 @@ function App() {
         </Switch>
       </BrowserRouter>
       <Registration/>
+      <HookCounterUseState/>
+      <HookCounterPreviousState/>
+      <UseStatewithArray/>
       </div>
   );
 }
