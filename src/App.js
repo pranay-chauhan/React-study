@@ -25,7 +25,9 @@ import Registration from './Form-Validation/Registration';
 import HookCounterUseState from './Hooks/useState Hooks/HookCouterUseState';
 import HookCounterPreviousState from './Hooks/useState Hooks/HookCounterPreviousState';
 import UseStatewithArray from './Hooks/useState Hooks/UseStatewithArray';
-import HookCounter1 from './Hooks/useEffect Hooks/HookCounter1'
+import HookCounter1 from './Hooks/useEffect Hooks/HookCounter1';
+import HookMouse from './Hooks/useEffect Hooks/HookMouse';
+import MouseContainer from './Hooks/useEffect Hooks/MouseContainer' 
 function App() {
   return (
     <div>
@@ -71,6 +73,8 @@ function App() {
       <HookCounterPreviousState/> */}
       {/* <UseStatewithArray/> */}
       <HookCounter1/>
+      <HookMouse/>
+      <MouseContainer/>
       </div>
   );
 }
