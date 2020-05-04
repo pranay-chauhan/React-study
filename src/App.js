@@ -22,9 +22,10 @@ import PageNotFound from './Routing/PageNotFound'
 // import Student from './Table/Student';
 // import Flower from './Functional-component/Flower';
 import Registration from './Form-Validation/Registration';
-import HookCounterUseState from './Hooks/HookCouterUseState';
-import HookCounterPreviousState from './Hooks/HookCounterPreviousState';
-import UseStatewithArray from './Hooks/UseStatewithArray';
+import HookCounterUseState from './Hooks/useState Hooks/HookCouterUseState';
+import HookCounterPreviousState from './Hooks/useState Hooks/HookCounterPreviousState';
+import UseStatewithArray from './Hooks/useState Hooks/UseStatewithArray';
+import HookCounter1 from './Hooks/useEffect Hooks/HookCounter1'
 function App() {
   return (
     <div>
@@ -66,9 +67,10 @@ function App() {
         </Switch>
       </BrowserRouter>
       <Registration/>
-      <HookCounterUseState/>
-      <HookCounterPreviousState/>
-      <UseStatewithArray/>
+      {/* <HookCounterUseState/>
+      <HookCounterPreviousState/> */}
+      {/* <UseStatewithArray/> */}
+      <HookCounter1/>
       </div>
   );
 }
