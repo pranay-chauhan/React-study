@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserContext,ChannelContext} from '../../App';
+import { UserContext,ChannelContext,myOwnContext} from '../../App';
 function ComponentC(){
     return(
         <div>
@@ -14,6 +14,13 @@ function ComponentC(){
 					)
 				}}
 			</UserContext.Consumer>
+			<myOwnContext.Consumer>
+				{
+					msg=>(
+					<h1>{msg}</h1>
+					)
+				}
+			</myOwnContext.Consumer>
         </div>
     )
 }

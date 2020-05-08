@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import About from './Routing/About';
@@ -33,8 +33,16 @@ import ComponentA from './Hooks/useContext/ComponentA';
 import ComponentB from './Hooks/useContext/ComponentB';
 import ComponentC from './Hooks/useContext/ComponentC';
 export const UserContext = React.createContext();
-export const ChannelContext = React.createContext()
-function App() {
+export const ChannelContext = React.createContext();
+export const valueContext = React.createContext();
+export const myOwnContext = React.createContext();
+export default class App extends Component {
+  render(){
+    this.state ={
+      name:'Hello World!!!',
+      value:10
+    }
+  
   return (
     <div>
       <Person/> 
@@ -82,14 +90,18 @@ function App() {
       <HookMouse/>
       <MouseContainer/>
       <DataFetching/>
-      <UserContext.Provider value={'Pranay'}>
+      <UserContext.Provider >
         <ChannelContext.Provider value={'Chauhan'}>
+          <valueContext.Provider>
+          </valueContext.Provider>
 					<ComponentC />
           <ComponentB/>
 				</ChannelContext.Provider>
 			</UserContext.Provider>
+      <myOwnContext.Provider value={this.state.name}>
+        <ComponentC/>
+      </myOwnContext.Provider>
       </div>
   );
 }
-
-export default App;
+}
