@@ -24,13 +24,16 @@ class fruit extends React.Component{
         return(
             <div>
                 <table className="table table-striped">
+                
                     <th>Fruit Name</th>
                     <th>Fruit Cost</th>
                     <th>Fruit Color</th>
+        
+                    <tbody>
                     {
-                        this.state.fruitShop.map((f)=>{
+                        this.state.fruitShop.map((f,id)=>{
                             return(
-                                <tr>
+                                <tr key={id}>
                                     <td>{f.fruit_name}</td>
                                     <td>{f.cost}</td>
                             <td>{f.color}</td>
@@ -38,6 +41,7 @@ class fruit extends React.Component{
                             )
                         })
                     }
+                    </tbody>
                 </table>
             </div>
         )

@@ -15,6 +15,8 @@ import Shop from "./Children/Shop";
 import Fruit from './Table/Fruit';
 import Error from './Error-Boundries/Error';
 import FoodItem from './Error-Boundries/FoodItem';
+import HoverCounter from './HOC/HoverCounter';
+import ButtonCounter from './HOC/ButtonCounter'
 //import Bird from './Class-component/Bird';
 //import Car from './Functional-component/Car';
 //import Employee from './Table/Employee-image';
@@ -101,6 +103,8 @@ export default class App extends Component {
       <myOwnContext.Provider value={this.state.name}>
         <ComponentC/>
       </myOwnContext.Provider>
+      <HoverCounter name="Mohan"/>
+      <ButtonCounter name="Mohan"/>
       </div>
   );
 }
