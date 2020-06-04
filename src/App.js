@@ -35,6 +35,7 @@ import ComponentA from './Hooks/useContext/ComponentA';
 import ComponentB from './Hooks/useContext/ComponentB';
 import ComponentC from './Hooks/useContext/ComponentC';
 import InlineStyle from './style/InlineStyle';
+import ExternalStyle from './style/ExternalStyling'
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -109,6 +110,7 @@ export default class App extends Component {
       <HoverCounter name="Mohan"/>
       <ButtonCounter name="Mohan"/>
       <InlineStyle/>
+      <ExternalStyle/>
       </div>
   );
 }
