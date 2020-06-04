@@ -34,10 +34,13 @@ import DataFetching from './Hooks/useEffect Hooks/dataFetching';
 import ComponentA from './Hooks/useContext/ComponentA';
 import ComponentB from './Hooks/useContext/ComponentB';
 import ComponentC from './Hooks/useContext/ComponentC';
+import InlineStyle from './style/InlineStyle';
+
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 export const valueContext = React.createContext();
 export const myOwnContext = React.createContext();
+
 export default class App extends Component {
   render(){
     this.state ={
@@ -105,6 +108,7 @@ export default class App extends Component {
       </myOwnContext.Provider>
       <HoverCounter name="Mohan"/>
       <ButtonCounter name="Mohan"/>
+      <InlineStyle/>
       </div>
   );
 }
