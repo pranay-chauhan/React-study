@@ -36,7 +36,8 @@ import ComponentB from './Hooks/useContext/ComponentB';
 import ComponentC from './Hooks/useContext/ComponentC';
 import InlineStyle from './style/InlineStyle';
 import ExternalStyle from './style/ExternalStyling'
-import IfElse from './Condition_React_JS/IfElse'
+import IfElse from './Condition_React_JS/IfElse';
+import Ternary from './Condition_React_JS/Ternary'
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 export const valueContext = React.createContext();
@@ -112,6 +113,7 @@ export default class App extends Component {
       <InlineStyle/>
       <ExternalStyle/>
       <IfElse/>
+      <Ternary/>
       </div>
   );
 }
